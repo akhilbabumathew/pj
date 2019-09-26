@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Booking {
 static int c=0;
-public void Booking() throws IOException
+public void book() throws IOException
 {
 Scanner in=new Scanner(System.in);
 
@@ -17,6 +17,7 @@ booking = new int[25];
 String str;
 int room;
 int f=0;
+
 do
 {
 System.out.println("Menu");
@@ -44,18 +45,14 @@ Guest gt1=new Guest();
 System.out.println("Check Status:");
 System.out.println("Enter room number");
 room=in.nextInt();
-for(int i=1;i<=25;i++)
-{
+
 if(booking[room]==1)
 {
 System.out.println("Room number "+room+" is booked.");
-break;
 }
 else
 {
 System.out.println("Room number "+room+" is not booked.");
-break;
-}
 }
 break;
 case 3:
@@ -75,4 +72,6 @@ if(str.equals("yes"))
 
 
 }
+
+
 }

@@ -3,7 +3,7 @@ package project;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-//import java.sql.Date;
+import java.sql.Date;
 
 public class Guest {
 String ac;
@@ -11,16 +11,18 @@ String cot;
 String cable;
 String wifi;
 String laundry;
-
 static int total=0;
+
 //int booking[];
 //booking=new int[25];
+
 public void Book() throws IOException
 {
+BufferedReader br1=new BufferedReader(new InputStreamReader(System.in));
+
 System.out.println("Booking:");
 System.out.println("Please choose the services required.");
 System.out.println("AC/non-AC(AC/nAC)");
-BufferedReader br1=new BufferedReader(new InputStreamReader(System.in));
 ac=br1.readLine();
 if(ac.equals("AC"))
 {
@@ -119,4 +121,4 @@ System.out.println("without laundry service");
 }
 
 }
-
+ 

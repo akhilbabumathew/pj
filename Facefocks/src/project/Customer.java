@@ -36,7 +36,7 @@ this.email = email;
 public String getProofType() {
 return proofType;
 }
-public void setProofType(String proofID) {
+public void setProofType(String proofType) {
 this.proofType = proofType;
 }
 public String getProofID() {
@@ -57,5 +57,3 @@ System.out.println(proofID);
 
 }
 }
-
-
